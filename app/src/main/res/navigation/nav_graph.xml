@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/IMCFragment">
+
+    <fragment
+        android:id="@+id/IMCFragment"
+        android:name="br.com.joselaine.tresapp.IMCFragment"
+        android:label="fragment_i_m_c"
+        tools:layout="@layout/fragment_i_m_c" >
+        <action
+            android:id="@+id/action_IMCFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+        <action
+            android:id="@+id/action_IMCFragment_to_sobreFragment"
+            app:destination="@id/sobreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="br.com.joselaine.tresapp.CadastroFragment"
+        android:label="fragment_cadastro"
+        tools:layout="@layout/fragment_cadastro" />
+    <fragment
+        android:id="@+id/sobreFragment"
+        android:name="br.com.joselaine.tresapp.SobreFragment"
+        android:label="fragment_sobre"
+        tools:layout="@layout/fragment_sobre" />
+</navigation>
