@@ -45,14 +45,14 @@ class IMCFragment : Fragment() {
 
                 val textResult = when {
                     imc < 10 -> "Desnutrição Grau V"
-                    imc in 10.0..12.9 -> "Desnutrição Grau IV"
-                    imc in 13.0..15.9 -> "Desnutrição Grau III"
-                    imc in 16.0..16.9 -> "Desnutrição Grau II"
-                    imc in 17.0..18.4 -> "Desnutrição Grau I"
-                    imc in 18.5..24.9 -> "Normal"
-                    imc in 25.0..29.9 -> "Pré-obesidade"
-                    imc in 30.0..34.5 -> "Obesidade Grau I"
-                    imc in 34.6..39.9 -> "Obesidade Grau II"
+                    imc in 10.0..12.99 -> "Desnutrição Grau IV"
+                    imc in 13.0..15.99 -> "Desnutrição Grau III"
+                    imc in 16.0..16.99 -> "Desnutrição Grau II"
+                    imc in 17.0..18.49 -> "Desnutrição Grau I"
+                    imc in 18.5..24.99 -> "Normal"
+                    imc in 25.0..29.99 -> "Pré-obesidade"
+                    imc in 30.0..34.59 -> "Obesidade Grau I"
+                    imc in 34.6..39.99 -> "Obesidade Grau II"
                     imc >= 40 -> "Obesidade Grau III"
                     else -> ""
                 }
